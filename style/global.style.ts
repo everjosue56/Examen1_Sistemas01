@@ -2,53 +2,35 @@ import { Colors } from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const globalStyles = StyleSheet.create({
-    background: {
-        backgroundColor: 'white',
-              flex: 1,
-    },
-
-    titleTemperatura : {
-        textAlign:"center",
-        padding: 10,
-        fontSize:30,
-        fontFamily: 'NotoSans',
-        fontWeight: 300,
-        marginTop : 80,
-    },
-
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-      textCount: {
-         fontSize:120, 
-         fontWeight:'100',
-      },
-      floatingButton: {
-        position: 'absolute',
-        bottom: 20,
-        backgroundColor: '#B82132',
-        padding: 20,
-        borderRadius: 100,
-        shadowColor: '#000',
-        shadowOffset: {width: 0, height: 5},
-        shadowOpacity: 0.3,
-        elevation: 3
-      },
-      floatingButtonText: {
-        color: 'white',
-        fontSize:20,
-        fontWeight: 'bold',
-        width: 25,
-        height: 25
-      },
-    
-      positionLeft :{
-        left: 20,
-      },
-      positionRight: {
-        right: 20,
-      }
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f5f5f5",
+  },
+  temperatureText: {
+    fontSize: 48,
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+  buttonContainer: {
+    flexDirection: "row",
+    gap: 20,
+  },
+  button: {
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    backgroundColor: "black",
+    borderRadius: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 24,
+    fontWeight: "bold",
+  },
 })
